@@ -23,11 +23,15 @@ public class DuongXinyuEvaluator {
     }
 
     private String name;
-
+    DuongXinyuEnum x;
     public DuongXinyuEvaluator(String input){
         this.name = input;
     }
-
-
+    public boolean isDuong(){
+        return this.name.equals(x.Duong.name());
+    }
+    public boolean isXinyu(){
+        return this.name.equals(x.Xinyu.name());
+    }
 
 }
